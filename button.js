@@ -36,15 +36,14 @@ document.addEventListener('DOMContentLoaded', function() {
             const currentJob = parseInt(document.getElementById('total-job').innerText);
             const remainingJob = currentJob + completedTask;
             document.getElementById('total-job').innerText = remainingJob;
-            if(remainingTask === 0){
+            if(totalTaskAssigned === 0){
                 alert('"Congrats!! You have completed all the current task"')
             }
-
             const taskTitle= document.querySelectorAll(".task-title")[i].innerText;
             const taskHistory = document.getElementById("task-history");
             const historyDiv = document.createElement("div")
             historyDiv.innerHTML = `            
-             <div class="bg-white text-black p-2 text-justify rounded-lg space-y-2 indivisualHistory">
+             <div class="bg-white text-black p-2 text-justify rounded-lg space-y-2  indivisualHistory">
                 <p>You have Completed the ${taskTitle} at ${formatTime()} </p>      
             </div> `
             taskHistory.appendChild(historyDiv);
@@ -68,3 +67,17 @@ document.getElementById("clear-history").addEventListener("click", function(even
     }
 
 });
+
+
+//color change 
+
+function getRandomColor() {
+    return `rgb(${Math.floor(Math.random() * 256)}, 
+                ${Math.floor(Math.random() * 256)}, 
+                ${Math.floor(Math.random() * 256)})`;
+}
+
+document.getElementById("color-change").addEventListener('click', function(){
+    document.body.style.backgroundColor = getRandomColor();
+})
+    

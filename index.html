@@ -42,12 +42,12 @@ html, body {
   </script>
 </head>
 
-<body class="max-w-screen-2xl mx-auto poppins-regular">
+<body class="max-w-screen-3xl mx-auto poppins-regular">
 
   
   <!-- nav bar starts -->
-  <section class="max-w-screen-2xl mx-auto pt-4 ">
-    <div class="navbar bg-black rounded-xl  ">
+  <section class="max-w-screen-3xl mx-auto pt-4 text-black px-2">
+    <div class="navbar bg-white rounded-xl  ">
       <div class="flex-1">
         <img src="./assets/logo.png" alt="">
         <a class="btn btn-ghost text-xl"><span class="font-normal ">Dev</span> <span class="font-bold">Board</span></a>
@@ -69,7 +69,7 @@ html, body {
         </div>
         <div class="dropdown dropdown-end">
           <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
-            <div class="w-10 rounded-full">
+            <div class="w-10 rounded-full" id="color-change">
               <img alt="Tailwind CSS Navbar component" src="./assets/theme-btn.png" />
             </div>
           </div>
@@ -89,14 +89,14 @@ html, body {
   <section class="p-2">
 
     <!-- task assigned -->
-    <div class="flex w-6/5  bg-black justify-between mt-4 rounded-xl">
+    <div class="flex w-6/5  bg-white justify-between mt-4 rounded-xl">
 
      <div class="flex mt-2 p-2 gap-2">
       <div>
         <input type="checkbox" checked="checked" class="checkbox checkbox-primary mt-1" />
       </div>
 
-      <div>
+      <div class="text-black">
         <p>Task Assigned </p>
         <p class="font-extrabold" id="task-assigned-number">06</p>
       </div>
@@ -114,7 +114,7 @@ html, body {
       <!-- discover something ends -->
 
       <!-- date -->
-      <div class="flex items-center gap-2 p-2  ">
+      <div class="flex items-center gap-2 p-2 text-black ">
         <img src="./assets/calender.png" alt="">
         <h2 class="font-extrabold" id="currentDate"></h2>
         <!-- date ends -->
@@ -127,9 +127,9 @@ html, body {
 
   
 <!-- MAIN SECTION START -->
-  <section class="w-6/5 p-2 text-black">
+  <section class="w-6/5 p-2 text-black ">
 
-    <div class="grid grid-cols-3 p-2 gap-3 bg-white rounded-lg my-5">
+    <div class="grid grid-cols-3 p-2 gap-3 bg-white rounded-lg my-5 pb-14">
       <div class="bg-[#F4F7FF] rounded-lg p-5 space-y-3">
           <span class="bg-white inline-block p-4 rounded-lg">ShopEase</span>
           <h3 class="font-medium text-2xl task-title">Fix Mobile Button Issue </h3>
@@ -245,9 +245,13 @@ html, body {
 
 
 <!-- right section start -->
-<section class="w-3/12 bg-white rounded-lg mt-6 h-[840px] ">
+<section class="w-3/12 bg-white rounded-lg mt-6 h-[840px] mr-2  ">
 <div class="min-h-screen min-w-32  text-center space-y-5 pt-10 px-10" id="task-history">
-  <h2 class="font-medium text-xl">Activity Log</h2>
+  <div class="flex  text-center items-center ml-28 gap-2">
+    <img class="w-6 h-6 text-center items-center" src="./assets/activity.png" alt="">
+    <h2 class="font-medium text-xl text-black ">Activity Log</h2>
+    
+  </div>
   <button class="btn btn-primary" id="clear-history">Clear History</button>
 </div>
 </section>
