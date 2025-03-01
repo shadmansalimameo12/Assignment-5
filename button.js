@@ -11,7 +11,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     
+    // function goToPage() {
+    //     window.location.href = "./newpage.html"; 
+    // }
+
+    // goToPage()
     
+    document.getElementById('nextPage').addEventListener('click', function goNextPage(){
+        window.location.href = "./newpage.html";
+        goNextPage()
+    })
   
     
 
@@ -81,3 +90,5 @@ document.getElementById("color-change").addEventListener('click', function(){
     document.body.style.backgroundColor = getRandomColor();
 })
     
+
+
