@@ -46,7 +46,7 @@ html, body {
 
   
   <!-- nav bar starts -->
-  <section class="max-w-screen-2xl mx-auto ">
+  <section class="max-w-screen-2xl mx-auto pt-4 ">
     <div class="navbar bg-black rounded-xl  ">
       <div class="flex-1">
         <img src="./assets/logo.png" alt="">
@@ -80,9 +80,9 @@ html, body {
   <!-- navbar ends -->
 
 <!-- Left and right flex section start -->
- <section class="flex ">
+ <section class="flex gap-4">
   <!-- left section start -->
- <section class="w-4/5">
+ <section class="w-4/5  ">
 
   <!-- main TOP section starts -->
 
@@ -258,20 +258,7 @@ html, body {
 <!-- Left and right flex section ends -->
 
   
-  
-  
-  
-  
-  
-  <script>
-    function formatDate() {
-      const today = new Date();
-      let dateFormat = today.toDateString().split(' ');
-      return `${dateFormat[0]},
-       ${dateFormat[1]} ${dateFormat[2]} ${dateFormat[3]}`
-    }
-    document.getElementById('currentDate').innerText = formatDate();        
-  </script>
+  <script src="./button.js"></script>
 </body>
 
 </html>
