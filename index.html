@@ -249,15 +249,21 @@ html, body {
 
 
 <!-- right section start -->
-<section class="w-3/12 bg-white rounded-lg mr-2  ">
-<div class="max-h-screen min-w-32  text-center space-y-5 pt-10 items-center px-10" id="task-history">
-  <div class=" flex pl-14 text-center items-center ml-14 w-full whitespace-nowrap gap-2">
-    <img class="w-6 h-6 " src="./assets/activity.png" alt="">
-    <h2 class="font-medium text-xl text-black ">Activity Log</h2>
+<section class="w-3/12 bg-white rounded-lg mr-2">
+  <div class="flex flex-col items-center justify-center text-center space-y-5 pt-10 px-4" id="task-history">
+    <!-- Centered activity log header -->
+    <div class="flex items-center justify-center gap-2">
+      <img class="w-6 h-6" src="./assets/activity.png" alt="">
+      <h2 class="font-medium text-xl text-black">Activity Log</h2>
+    </div>
     
+    <!-- Clear history button centered below -->
+    <div class="pt-5">
+      <button class="btn btn-primary" id="clear-history">Clear History</button>
+    </div>
+    
+    <!-- Activity items will be added here by JS -->
   </div>
-  <div class="pt-10"><button class="btn btn-primary" id="clear-history">Clear History</button></div>
-</div>
 </section>
 <!-- right section ends -->
 
