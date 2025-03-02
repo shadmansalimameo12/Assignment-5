@@ -9,13 +9,6 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('currentDate').innerText = formatDate();  
 
 
-
-    
-    // function goToPage() {
-    //     window.location.href = "./newpage.html"; 
-    // }
-
-    // goToPage()
     
     document.getElementById('nextPage').addEventListener('click', function goNextPage(){
         window.location.href = "./newpage.html";
