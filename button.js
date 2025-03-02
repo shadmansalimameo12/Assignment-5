@@ -45,8 +45,8 @@ document.addEventListener('DOMContentLoaded', function() {
             const taskHistory = document.getElementById("task-history");
             const historyDiv = document.createElement("div")
             historyDiv.innerHTML = `            
-             <div class=" text-black p-2 text-justify rounded-lg space-y-12   indivisualHistory bg-[#F4F7FF]  ">
-                <p class = "font-bold max-w-96 p-6  ">You have Completed the ${taskTitle} at ${formatTime()} </p>      
+             <div class=" text-black p-1 text-justify rounded-lg    indivisualHistory bg-[#F4F7FF]  ">
+                <p class = "font-bold max-w-96 p-4  ">You have Completed the ${taskTitle} at ${formatTime()} </p>      
             </div> `
             taskHistory.appendChild(historyDiv);
 
