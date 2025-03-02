@@ -20,10 +20,9 @@
 }
 
 html, body {
-  height: 100%; 
-  overflow-y: scroll; 
+  min-height: 100vh; 
+  overflow-y: auto; 
 }
-
 
 
 
@@ -91,7 +90,7 @@ html, body {
   <section class=" ">
 
     <!-- task assigned -->
-    <div class="flex w-6/5  justify-between pt-4 rounded-t-xl bg-[#F4F7FF] p-2 m-2">
+    <div class="flex w-6/5  justify-between pt-4 rounded-t-xl bg-[#F4F7FF] p-2  mb-1">
 
      <div class="flex mt-2 p-2 gap-2 pt-8 ">
       <div>
@@ -131,10 +130,10 @@ html, body {
 
   
 <!-- MAIN SECTION START -->
-  <section class="w-6/5 p-2 text-black bg-white rounded-b-lg pb-6  mx-2  ">
+  <section class="w-6/5 p-2 text-black bg-white rounded-b-lg pb-6 pt-10   ">
 
-    <div class="grid grid-cols-3  gap-3 rounded-lg pb-6">
-      <div class="bg-[#F4F7FF] rounded-lg p-5 space-y-3">
+    <div class="grid grid-cols-3  gap-3 rounded-lg pb-6 ">
+      <div class="bg-[#F4F7FF] rounded-lg p-5 space-y-3 shadow-md">
           <span class="bg-white inline-block p-4 rounded-lg font-bold">ShopEase</span>
           <h3 class="font-medium text-2xl task-title">Fix Mobile Button Issue </h3>
           <div class="bg-white p-5 rounded-lg text-gray-400">
@@ -151,7 +150,7 @@ html, body {
               </div>
           </div>
       </div>
-      <div class="bg-[#F4F7FF] rounded-lg p-5 space-y-3">
+      <div class="bg-[#F4F7FF] rounded-lg p-5 space-y-3 shadow-md">
           <span class="bg-white inline-block p-4 rounded-lg font-bold">CloudSync</span>
           <h3 class="font-medium text-2xl task-title">Add Dark Mode </h3>
           <div class="bg-white p-5 rounded-lg text-gray-400">
@@ -168,7 +167,7 @@ html, body {
               </div>
           </div>
       </div>
-      <div class="bg-[#F4F7FF] rounded-lg p-5 space-y-3">
+      <div class="bg-[#F4F7FF] rounded-lg p-5 space-y-3 shadow-md">
           <span class="bg-white inline-block p-4 rounded-lg font-bold">SwiftPay</span>
           <h3 class="font-medium text-2xl task-title">Optimize  Home page</h3>
           <div class="bg-white p-5 rounded-lg text-gray-400">
@@ -185,7 +184,7 @@ html, body {
               </div>
           </div>
       </div>
-      <div class="bg-[#F4F7FF] rounded-lg p-5 space-y-3">
+      <div class="bg-[#F4F7FF] rounded-lg p-5 space-y-3 shadow-md">
           <span class="bg-white inline-block p-4 rounded-lg font-bold">Meta</span>
           <h3 class="font-medium text-2xl task-title">Add new emoji 🤲 </h3>
           <div class="bg-white p-5 rounded-lg text-gray-400">
@@ -202,7 +201,7 @@ html, body {
               </div>
           </div>
       </div>
-      <div class="bg-[#F4F7FF] rounded-lg p-5 space-y-3">
+      <div class="bg-[#F4F7FF] rounded-lg p-5 space-y-3 shadow-md">
           <span class="bg-white inline-block p-4 rounded-lg font-bold">Google LLC</span>
           <h3 class="font-medium text-2xl task-title">Integrate OpenAI API </h3>
           <div class="bg-white p-5 rounded-lg text-gray-400">
@@ -219,7 +218,7 @@ html, body {
               </div>
           </div>
       </div>
-      <div class="bg-[#F4F7FF] rounded-lg p-5 space-y-3">
+      <div class="bg-[#F4F7FF] rounded-lg p-5 space-y-3 shadow-md">
           <span class="bg-white inline-block p-4 rounded-lg font-bold">Glassdoar</span>
           <h3 class="font-medium text-2xl task-title">Improve Job searching  </h3>
           <div class="bg-white p-5 rounded-lg text-gray-400">
@@ -261,7 +260,7 @@ html, body {
     <div class="pt-5">
       <button class="btn btn-primary" id="clear-history">Clear History</button>
     </div>
-    
+    <DIV class="border-b-2 border-dotted border-gray-500 w-96">.</DIV>
     <!-- Activity items will be added here by JS -->
   </div>
 </section>

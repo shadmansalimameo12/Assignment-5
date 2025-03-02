@@ -13,12 +13,18 @@
             padding: 0px;
             box-sizing: border-box;
         }
+
+        html,
+        body {
+            min-height: 100vh;
+            overflow-y: auto;
+        }
     </style>
 </head>
 
-<body class="bg-white ">
+<body class="bg-white">
     <!-- nav bar starts -->
-    <section class="max-w-screen-2xl mx-auto pt-4 mt- text-black px-1 scale-[90%] ">
+    <section class="max-w-screen-2xl mx-auto pt-4 mt- text-black px-1 scale-[100%] shadow-md rounded-md ">
         <div class="navbar bg-white rounded-xl  ">
             <div class="flex-1">
                 <img src="./assets/logo.png" alt="">
@@ -61,47 +67,52 @@
 
     <!-- Q & A section -->
 
-    <section class="max-w-screen-2xl mx-auto pb-14 scale-[90%]">
+    <section class="max-w-screen-2xl mx-auto pb-14 scale-[100%]">
         <h1 class="w-full text-black  text-center mx-auto text-2xl font-bold pt-6">Blogs</h1>
 
 
 
 
-    <div class="">
-        <div class="px-6 pb-6">
-            <h1 class="font-bold text-black mb-6 text-xl pt-12">Question-1: What are the different ways to select an
-                element in the DOM?</h1>
-            <p> ID : document.getElementById("id"),
-                Class : document.getElementsByClassName("class"),
-                Tag Name : document.getElementsByTagName("tag"),
-                Query Selector: document.querySelector("css-selector"),
-                Query Selector All : document.querySelectorAll("css-selector"),
-                Name Attribute : document.getElementsByName("name")</p>
+        <div class="">
+            <div class="px-6 pb-6 shadow-md rounded-md">
+                <h1 class="font-bold text-black mb-6 text-xl pt-12 border-b-2 border-dotted border-gray-500 p-4">Question-1: What are the different ways to select an
+                    element in the DOM?</h1>
+                <p> ID : document.getElementById("id"),
+                    Class : document.getElementsByClassName("class"),
+                    Tag Name : document.getElementsByTagName("tag"),
+                    Query Selector: document.querySelector("css-selector"),
+                    Query Selector All : document.querySelectorAll("css-selector"),
+                    Name Attribute : document.getElementsByName("name")</p>
+            </div>
+            <div class="px-6 pb-6 shadow-md rounded-md">
+                <h1 class="font-bold text-black mb-6 text-xl pt-12 border-b-2 border-dotted border-gray-500 p-4">Question-2: What is the difference between
+                    innerHTML,
+                    innerText, and textContent ?</h1>
+                <p> innerHTML: Gets or sets the content including HTML,
+                    innerText: Gets or sets only visible text (ignores hidden elements),
+                    textContent: Gets or sets all text (including hidden) but ignores HTML.</p>
+            </div>
+            <div class="px-6 pb-6 shadow-md rounded-md">
+                <h1 class="font-bold text-black mb-6 text-xl pt-12 border-b-2 border-dotted border-gray-500 p-4">Question-3: What is event delegation in the DOM?
+                </h1>
+                <p> Event Delegation: It’s a technique where a parent element handles events for its child elements
+                    using
+                    event bubbling, improving performance and supporting dynamically added elements.</p>
+            </div>
+            <div class="px-6 pb-6 shadow-md rounded-md">
+                <h1 class="font-bold text-black mb-6 text-xl pt-12 border-b-2 border-dotted border-gray-500 p-4">Question-4: What is event bubbling in the DOM?</h1>
+                <p> Event Bubbling: When an event on a child element first triggers its own handler and then propagates
+                    up to its parent and ancestors.</p>
+            </div>
+            <div class="px-6 pb-6 shadow-md rounded-md">
+                <h1 class="font-bold text-black mb-6 text-xl pt-12 border-b-2 border-dotted border-gray-500 p-4">Question-5: How do you create, add, and remove
+                    elements using JavaScript?</h1>
+                <p> Create Element: document.createElement("tag"),
+                    Add Element: parent.appendChild(child) or parent.append(child),
+                    Remove Element: element.remove() or parent.removeChild(child)</p>
+            </div>
+
         </div>
-        <div class="px-6 pb-6">
-            <h1 class="font-bold text-black mb-6 text-xl pt-12">Question-2: What is the difference between innerHTML,
-                innerText, and textContent ?</h1>
-            <p> innerHTML: Gets or sets the content including HTML,
-                innerText: Gets or sets only visible text (ignores hidden elements),
-                textContent: Gets or sets all text (including hidden) but ignores HTML.</p>
-        </div>
-        <div class="px-6 pb-6">
-            <h1 class="font-bold text-black mb-6 text-xl pt-12">Question-3: What is event delegation in the DOM?</h1>
-            <p> Event Delegation: It’s a technique where a parent element handles events for its child elements using
-                event bubbling, improving performance and supporting dynamically added elements.</p>
-        </div>
-        <div class="px-6 pb-6">
-            <h1 class="font-bold text-black mb-6 text-xl pt-12">Question-4: What is event bubbling in the DOM?</h1>
-            <p> Event Bubbling: When an event on a child element first triggers its own handler and then propagates up to its parent and ancestors.</p>
-        </div>
-        <div class="px-6 pb-6">
-            <h1 class="font-bold text-black mb-6 text-xl pt-12">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
-            <p> Create Element: document.createElement("tag"),
-                Add Element: parent.appendChild(child) or parent.append(child),
-                Remove Element: element.remove() or parent.removeChild(child)</p>
-        </div>
-       
-    </div>
 
 
 
